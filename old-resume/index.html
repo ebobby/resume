@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Francisco Soto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+     @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+     @charset "utf-8";
+     @-webkit-viewport   { width: device-width; }
+     @-moz-viewport      { width: device-width; }
+     @-ms-viewport       { width: device-width; }
+     @-o-viewport        { width: device-width; }
+     @viewport           { width: device-width; }
+
+     body{
+       font-family: 'Open Sans', Arial, Tahoma;
+       font-weight: 400;
+       color: #363636;
+       background: #9fa8da;
+     }
+     blockquote {
+       font-size: 1em;
+     }
+
+     .container{
+       margin-top: 80px;
+       margin-bottom: 15px;
+       background: #fff;
+     }
+
+     #photo-header{
+       margin-top: -75px;
+     }
+     #photo{
+       width: 160px;
+       height: 160px;
+       border-radius: 50%;
+       overflow: hidden;
+       padding: 5px;
+       background: #333;
+       display: inline-block;
+     }
+     #photo img{
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+     }
+     #text-header h1{
+       margin: 0;
+       padding: 0;
+       font-size: 1.5em;
+       font-weight: 700;
+       text-transform: uppercase;
+       letter-spacing: -1px;
+     }
+     #text-header h1::first-line{
+       font-size: 1.5em;
+       font-weight: 800;
+       line-height: 1.5em;
+     }
+     #text-header h1 span{
+       color: #334960;
+       opacity: 0.7;
+     }
+     #text-header h1 sup{
+       opacity: 0.5;
+     }
+     #text-header:after{
+       width: 100%;
+       height: 3px;
+       border-bottom: 1px solid #ddd;
+       margin-top: 15px;
+       content: '';
+       display: block;
+     }
+
+     .box{
+       padding-bottom: 10px;
+       margin-bottom: 25px;
+     }
+     .box h2{
+       color: #1a237e;
+       font-size: 1.5em;
+       font-weight: 700;
+       text-transform: uppercase;
+     }
+
+     #awards,
+     #education{
+       margin-top: 20px;
+       position: relative;
+       padding: 1em 0;
+       list-style: none;
+     }
+     #awards:before,
+     #education:before {
+       width: 5px;
+       height: 100%;
+       position: absolute;
+       left: 35px;
+       top: 0;
+       content: ' ';
+       display: block;
+       background: #32475c;
+       background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+       background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+       background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+       background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+       background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+     }
+     #awards li,
+     #education li{
+       width: 100%;
+       z-index: 2;
+       position: relative;
+       float: left;
+     }
+     #awards .year,
+     #education .year{
+       width: 15%;
+       background: #fff;
+       padding: 10px;
+       font-weight: 700;
+       display: inline-block;
+     }
+     #awards .description,
+     #education .description{
+       width: 85%;
+       display: inline-block;
+       background: #eee;
+       margin-bottom: 10px;
+       position: relative;
+       padding: 10px;
+       border-bottom: 1px solid #ccc;
+       border-right: 1px solid #ccc;
+     }
+     #awards .description:after,
+     #education .description:after {
+       content: '';
+       position: absolute;
+       top: 15px;
+       right: 0;
+       left: -16px;
+       height: 0;
+       width: 0;
+       border: solid transparent;
+       border-right-color: #eee;
+       border-width: 8px;
+       pointer-events: none;
+     }
+     #awards .description h3,
+     #education .description h3{
+       font-size: 1.2em;
+       margin: 0;
+       padding: 0;
+       font-weight: 700;
+     }
+     #awards .description p,
+     #education .description p{
+       margin-top: 5px;
+       padding: 0;
+     }
+
+     .job{
+       margin-bottom: 15px;
+     }
+     .job .details {
+       margin-left: 3%;
+       width: 95%;
+       padding: 10px;
+       margin-bottom: 10px;
+       background: #eee;
+       border-bottom: 1px solid #ccc;
+       border-right: 1px solid #ccc;
+     }
+     .job .where{
+       font-size: 1.2em;
+       font-weight: bold;
+     }
+     .job .year{
+       opacity: 0.7;
+     }
+     .job .profession{
+       font-size: 1.2em;
+       font-weight: bold;
+     }
+     .job .list-group {
+       margin-top: 10px;
+     }
+     .job .description{
+       line-height: 1.5em;
+     }
+     .job .highlights{
+       padding: 10px 0;
+       font-weight: bold;
+     }
+     .publication .name{
+       font-size: 1em;
+       font-weight: bold;
+     }
+     .publication .year{
+       opacity: 0.7;
+     }
+     .publication p{
+       margin: 0;
+       padding-top: 10px;
+     }
+
+     .contact-item{
+       width: 100%;
+       float: left;
+     }
+     .contact-item .icon{
+       padding: 10px;
+       border-right: 1px solid #ccc;
+       border-bottom: 1px solid #ccc;
+       color: #32475c;
+       background: #eee;
+     }
+     .contact-item:last-child .icon{
+       border-bottom: none;
+     }
+     .contact-item .title{
+       width: 80%;
+       width: calc(100% - 55px);
+       font-weight: 700;
+       opacity: 0.9;
+     }
+     .contact-item .title.only{
+       margin-top: 10px;
+     }
+     .contact-item .description{
+       width: 80%;
+       width: calc(100% - 55px);
+       color: #334960;
+     }
+
+     .item-interests,
+     .item-skills{
+       height: 30px;
+       color: #334960;
+       padding: 5px 10px;
+       margin-bottom: 5px;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       font-size: 1.1em;
+       font-weight: 600;
+     }
+     .interest,
+     .skill{
+       color: #fff;
+       display: inline-block;
+       margin-right: 5px;
+       margin-bottom: 5px;
+       padding: 5px 10px;
+       background: #3f51b5;
+       position: relative;
+       font-size: .85em;
+       border-radius: 5px;
+     }
+     .skill-level {
+       background-color: #227c74;
+       border-radius: 4px;
+       color: #fff;
+       padding: 1px 8px;
+       font-size: .75em;
+       position: absolute;
+       margin: 1px 10px;
+     }
+
+     #language-skills .skill{
+       margin: 10px 0;
+       padding-bottom: 10px;
+       border-bottom: 1px solid #eee;
+     }
+
+     .logo-container {
+       margin-right: 2%;
+       float: left;
+     }
+     .company-logo {
+       height: 45px;
+       width: 45px;
+     }
+
+     @media (min-width: 500px) {
+       #education .description{
+         width: 85%;
+       }
+     }
+     @media (min-width: 768px) {
+       #education .description{
+         width: 85%;
+       }
+     }
+     @media (min-width: 992px) {
+       #education .description{
+         width: 85%;
+       }
+     }
+     @media (min-width: 1200px) {
+       #education .description{
+         width: 85%;
+       }
+     }
+
+    </style>
+    <style type="text/css" media="print">
+     body {
+       font-size: .95em;
+       -webkit-print-color-adjust: exact;
+     }
+
+     a[href]:after {
+       content: none !important;
+     }
+
+     #photo{
+       display: none;
+     }
+
+     .box {
+       margin-bottom: -10px;
+     }
+     .col-sm-5{
+       width: 40%;
+       padding: 0 15px;
+     }
+
+     .col-sm-7{
+       width: 60%;
+       padding: 0 15px;
+     }
+
+     .skills .col-sm-offset-1,
+     .interests .col-sm-offset-1{
+       margin-top: -10px;
+       margin-bottom: 5px;
+     }
+
+     #awards:before,
+     #education:before {
+       background: none;
+     }
+
+     #awards .description,
+     #education .description,
+     .job .details {
+       border: 1px solid #eee;
+     }
+     .publication,
+     .publication .panel-heading,
+     .publication .name{
+       margin: 0;
+       padding: 0 5px;
+       border: none;
+     }
+     .publication .panel-body {
+       padding: 0 10px;
+       margin: 0;
+     }
+
+     .badge {
+       margin: 0;
+     }
+
+     .list-group-item{
+       border: none;
+       margin: 0;
+       padding: 5px 15px;
+     }
+     .list-group-item:after{
+       content: '';
+       position: absolute;
+       top: 8px;
+       right: 0;
+       left: -1px;
+       height: 0;
+       width: 0;
+       border: solid transparent;
+       border-right-color: #999;
+       border-width: 4px;
+       pointer-events: none;
+     }
+
+     .company-logo {
+       height: 32px;
+       width: 32px;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="me.jpg" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Francisco "Bobby" Soto<br><span>I solve more problems than I create.</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fa fa-user ico"></i> About</h2>
+            <p>I am a dad, write code, use emacs, think about startup ideas,  build them, brew and drink beer, lift weights, play guitar, read a lot and own a bar.</p>
+          </div>
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+            <!-- WORK EXPERIENCE -->
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="homeroom.svg" />
+                  </div>
+                  <div class="where">Homeroom</div>
+                  <div class="year">March 2019 – Present</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Sr. Software Engineer</div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="carezone.png" />
+                  </div>
+                  <div class="where">CareZone</div>
+                  <div class="year">July 2015 – December 2018</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Sr. Software Engineer</div>
+                  <div class="description">
+                    <p>I maintained and developed <strong>backend</strong> systems all throughout Carezone. Both user facing (the api server for our mobile applications ) and multiple internal systems.</p>
+                    <p>As growth increases I helped to <strong>optimize</strong> our current systems, from <strong>SQL</strong> queries, to <strong>efficient memory consumption</strong> to efficient <strong>algorithms and data structures</strong> to keep up with current (and future) demand.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="hello-code.png" />
+                  </div>
+                  <div class="where">Hello Code</div>
+                  <div class="year">April 2014 – May 2015</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">CEO &#x2F; Cofounder  &#x2F; Backend Engineer</div>
+                  <div class="description">
+                    <p>We built <a target="_blank" href="https://www.chopeo.mx">Chopeo</a>, a <strong>multi-tenant</strong>, inexpensive and easy to use eCommerce platform with the goal of empowering microbusinesses in Mexico.</p>
+                    <p>As CEO and founder I provided the company <strong>vision</strong> and helped growth the company with that vision and our values.</p>
+                    <p>The company assets were <strong>acquired</strong> by <a href="http://www.dub5.com/" target="_blank">dub5</a> <small>(<a href="https://www.linkedin.com/company/10219643" target="_blank">linkedin</a>)</small> on February, 2016.</p>
+                    <p>As the lead <strong>backend</strong> engineer I <strong>designed and implemented</strong> the <strong>architecture</strong>, <strong>backend</strong>, <strong>deployment</strong> strategy and <strong>provisioning</strong> for our servers. The stack was <strong>Ruby on Rails</strong>, <strong>PostgreSQL</strong>, <strong>Javascript</strong>, and <strong>Common Lisp</strong>.</p>
+                    <p>
+                      Open source contributions:
+                      <ul>
+                        <li><a target="_blank" href="https://github.com/ebobby/active_record_batteries">active_record_bateries</a></li>
+                        <li><a target="_blank" href="https://github.com/ebobby/devenv_build">devenv_build</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="spire.jpg" />
+                  </div>
+                  <div class="where">Spire Global, Inc (previously NanoSatisfi)</div>
+                  <div class="year">August 2013 – November 2013</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Spacecraft Software Engineer</div>
+                  <div class="description">
+                    <p>As a <strong>Spacecraft</strong> Software Engineer my role was to build software operating NanoSatisfi satellites.</p>
+                    <p>For the 2nd-gen <strong>CubeSat</strong> <a target="_blank" href="https://space.skyrocket.de/doc_sdat/ardusat-2.htm">ArduSat2</a>, I built the <strong>firmware</strong> that controlled in the radio communications module. I improved vendor supplied code to support our communications and  ground-satellite file transfer <strong>protocols</strong>.</p>
+                    <p>For the 3rd-gen satellite, <a target="_blank" href="https://space.skyrocket.de/doc_sdat/lemur-1.htm">Lemur-1</a>, I built a <strong>linux daemon</strong> that was the primary process monitoring and controlling the rest of the satellite's modules. The <strong>microcontrollers</strong> were all <strong>ARM</strong>. We developed in <strong>C</strong> with <strong>FreeRTOS</strong> for Ardusat2, and embedded <strong>Linux</strong> for Lemur-1. Our build tools were <strong>Python</strong> based.</p>
+                    <p>
+                      Open source contributions:
+                      <ul>
+                        <li><a target="_blank" href="https://github.com/ArduSat/atmega2560-xmem">atmega2560-xmem</a></li>
+                        <li><a target="_blank" href="https://github.com/ArduSat/libohnoes">libohnoes</a></li>
+                        <li><a target="_blank" href="https://github.com/ebobby/embedded-dev64">embedded-dev64</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="expensify.png" />
+                  </div>
+                  <div class="where">Expensify</div>
+                  <div class="year">February 2013 – June 2013</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Sr. Software Engineer</div>
+                  <div class="description">
+                    <p>As a Senior Software Engineer my role involved adding and improving features and fixing bugs all over Expensify's stack.</p>
+                    <p>I worked on Expensify's <strong>single page application</strong>, <strong>jQuery</strong> and <strong>Javascript</strong>. I worked on the <strong>backend</strong> (integrations, web/mobile api, data consumption) which was written in <strong>PHP</strong>.</p>
+                    <p>I also had the opportunity to improve Expensify's database and email deamons, custom built in <strong>C++</strong> and were designed specifically for Expensify's security and performance needs.</p>
+                    <p>I also was the company's <strong>SQL</strong> guru. I <strong>optimized</strong> and improved <strong>queries</strong> all across the board. As an example, I fixed a long running analytics exporting script to take <strong>~20 minutes instead of ~18 hours</strong>.</p>
+                    <p>
+                      Open source contributions:
+                      <ul>
+                        <li><a target="_blank" href="https://github.com/ebobby/tracing.js">tracing.js</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="ingrooves.png" />
+                  </div>
+                  <div class="where">INgrooves</div>
+                  <div class="year">April 2009 – December 2012</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Software Engineer &#x2F; Engineering Manager</div>
+                  <div class="description">
+                    <p>I worked with INgrooves's enterprise-level end-to-end, automated digital supply chain system for the distribution and administration of digital media assets.</p>
+                    <p>My most significant contributions:
+                      <ul>
+                        <li><strong>Manage</strong> small technical teams and write significant parts of the code in two <strong>major, years long, projects</strong>.</li>
+                        <li>A system in charge of ingesting metadata and files of digital content. The system was <strong>scalable</strong> and <strong>reliable</strong>. It had to ingest content 24/7. Any disruption in the service at critical times, like christmas, would mean millions of lost revenue.</li>
+                        <li>A <strong>scalable</strong> and <strong>reliable</strong> <strong>ETL</strong> system in charge of ingesting the metadata and distribution rights for digital media. The SLA for this system was severe and it was met with flying colors and room to spare.</li>
+                        <li>Improve the <strong>stability</strong>, code <strong>quality</strong> and <strong>scalability</strong> of our underlying platforms and systems.</li>
+                      </ul>
+                    </p>
+                    <p>The stack was Microsoft's. <strong>MS SQL Server</strong>, <strong>C#</strong> and <strong>.NET</strong>. Also <strong>C++</strong> and <strong>Python</strong> for tooling.</p>
+                    <p>
+                      Open source contributions:
+                      <ul>
+                        <li><a target="_blank" href="https://github.com/ebobby/has-many-with-set">has-many-with-set</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="nearsoft.jpg" />
+                  </div>
+                  <div class="where">Nearsoft</div>
+                  <div class="year">August 2008 – September 2009</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Sr. Software Engineer</div>
+                  <div class="description">
+                    <p>The most significant project I worked on was an online "haggling" SaaS application, <a target="_blank" href="https://www.crunchbase.com/organization/fididel">Fididel</a>. The backend was <strong>PHP/Zend/MySQL</strong> and the frontend was only <strong>jQuery</strong>.</p>
+                    <p>We used <strong>XMPP</strong> as the protocol for commucations. We used <strong>ejabberd</strong>, <strong>COMET</strong> and <strong>Javascript</strong>. I wrote the client protocol implementation in <strong>Javascript</strong>.</p>
+                    <p>The online web-based chat worked in <i>every</i> browser with no downloads nor plugins required which was quite a feat at the time.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="row">
+                <div class="details">
+                  <div class="logo-container">
+                    <img class="company-logo" src="cidia.png" />
+                  </div>
+                  <div class="where">Centro de Investigación y Desarrollo de Ingeniería Avanzada (CIDIA)</div>
+                  <div class="year">February 2006 – August 2008</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-offset-1 col-xs-11">
+                  <div class="profession">Researcher&#x2F;Developer</div>
+                  <div class="description">
+                    <p>I worked on:</p>
+                    <ul>
+                      <li>I managed the team and contributed to a bovine carcass meat grader application. Using <strong>computer vision</strong> and <strong>image processing</strong> it could detect and measure the features required for grading using the Mexican standards. This system has been published in magazines, newspapers, and was invited to the national fair science hosted by the Mexican Senate during September, 2007. <br />It is still actively used by state slaugterhouses and meat distributors.</li>
+                      <li>An <strong>image processing</strong> application with filters, formatting and data analysis as a research tool for a <strong>2D image to 3D rendering</strong> optical profilometry project.</li>
+                      <li>A software interface for a temperature/humidity sensors used inside an industrial computer system. It measured, logged and ultimately powered the system off in the case of leaks or over heating.</li>
+                      <li>A <strong>J2ME</strong> cellphone application for <strong>image analysis</strong> for use in the roasting process in the coffee industry. This was ultimately dropped as the cellphones at the time didn't have enough image quality to do serious image analysis. It was ported to a <strong>C# WinForms</strong> application and an industrial strength camera. This system was patented (<a target="_blank" href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2010080016">WO2010080016</a>).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              <div class="title pull-right"></div>
+              <div class="description pull-right">Hermosillo, Sonora<br /> Mexico</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right">ebobby AT ebobby.org</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;ebobby.org" target="_blank">https:&#x2F;&#x2F;ebobby.org</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github-square fa-fw"></span></div>
+              <div class="title pull-right">Github</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;ebobby" target="_blank">ebobby</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-stack-overflow fa-fw"></span></div>
+              <div class="title pull-right">stackoverflow</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;3695&#x2F;francisco-soto" target="_blank">Francisco Soto</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-linkedin-square fa-fw"></span></div>
+              <div class="title pull-right">Linkedin</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;franciscomsoto" target="_blank">Francisco Soto</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-twitter-square fa-fw"></span></div>
+              <div class="title pull-right">Twitter</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;ebobby" target="_blank">ebobby</a></div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fa fa-language ico"></i> Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">English<span class="skill badge pull-right">Professional working proficiency</span></li>
+              <li class=" list-group-item">Spanish<span class="skill badge pull-right">Native or bilingual proficiency</span></li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fa fa-tasks ico"></i> Relevant Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                C
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Common Lisp
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Embedded Systems
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                JavaScript
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Linux
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Ruby
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Ruby on Rails
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Software Engineering
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                SQL
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2001 2005</div>
+                <div class="description pull-right">
+                  <h3>Universidad de Sonora</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> B. C. Computer Science</p>
+                  <p></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2><i class= "fa fa-check-square ico"></i> References</h2>
+            <blockquote>
+              <div>Francisco, aka Bobby, was a <strong>key contributor</strong> to some of our biggest projects (and <strong>solved some of the hardest problems</strong>) on the backend team at CareZone. If a DB query is slow or some operation just seems to be taking longer than it should, Bobby is your man to jump in and investigate — and to <strong>teach others</strong> how to drive the investigation for the next time around.<br /> One thing I really love about Bobby is that even when he's working with high-level languages and frameworks (e.g. Ruby/Rails), he <strong>deeply understands the internals</strong> of the system and that knowledge drives better architectural decisions. And I also truly appreciate his positive attitude and great sense of humor. Bobby is great!</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/laurenlavoie/" target= "_blank">Lauren Lavoie - CareZone</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>I worked with Bobby while at CareZone. He's <strong>passionate</strong> about his work, appropriately <strong>opinionated</strong>, and <strong>gets sh*t done</strong>. Plus, he's a <strong>stand up guy</strong> to boot; I'd work with him any time. Please don't hesitate to contact me if you have questions.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/chi-kai-chien-9681685/" target= "_blank">Chi-Kai Chen - CareZone</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>I’ve seen Francisco go <strong>above and beyond</strong> in researching the best solution for a problem that other think is very complicated, I don't know how he does it but he always comes back with an <strong>elegant, performant and scalable</strong> solution. If you want to work with someone that know how to dive deep into code, or <strong>understand the business</strong> at a high level Francisco will be you man.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/rcgonzalezf/" target= "_blank">Roberto Carlos Gonzalez Flores - eBay Inc</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco is a great guy, very <strong>smart</strong> and <strong>productive</strong>, he knows his tools and is always up to date with technology  He's <strong>reliable</strong> and always <strong>delivers on time</strong>. Very sociable and has great experience on the field</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/alfonsoharita/" target= "_blank">Alfonso Harita - Trimble Inc.</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco's one of the <strong>best developers</strong> I've had the chance to work with.  He has a <strong>great breadth of experience</strong> from embedded development to web programming, and yet still has a surprising <strong>depth of knowledge</strong> in many areas.  Furthermore, I've seen him pick up and use new tools well with <strong>frightening speed</strong>.  If the opportunity is available to you, hire the heck out of him.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/kevinkuchta/" target= "_blank">Kevin Kuchta - Joyable</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco is the kind of software engineer that <strong>others aspire to be</strong>. He is <strong>diligent</strong>, <strong>experienced</strong>, <strong>curious</strong>, <strong>forth-right</strong>, and <strong>tenacious</strong>.     In the short time I worked with Francisco, I was amazed by his ability to jump into a pool of unknowns, and <strong>deliver</strong> a spacecraft in just a few short months, especially considering the fact that he had never worked in aerospace before.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/marshallculpepper/" target= "_blank">Marshall Culpepper - Kubos Corporation</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco is a <strong>highly skilled</strong> developer always <strong>one step ahead</strong>, very <strong>product oriented</strong> and always focusing on <strong>finding solutions</strong> that will work in the long run. Working with Francisco helped me grow professionally and personally. He always concentrates on creating <strong>scalable solutions</strong> and looks forward to build an strong and integrated team</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/sandradanielav/" target= "_blank">Sandra Vazquez - Nearsoft, Inc</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco loves software development and demonstrate <strong>passion</strong> for work, he's <strong>eager to learn</strong> new things, <strong>leadership</strong> and <strong>technical skills</strong> level makes him the kind of professional you would like to have in your team.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/juliogonzalez/" target= "_blank">Julio Cesar Gonzalez - Nearsoft</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Francisco is a very good <strong>problem-solving</strong> developer with a lot of <strong>experience</strong>.</div>
+              <footer>
+                <a href="https://www.linkedin.com/in/martincotta/" target= "_blank">Martin Cotta - NerdWallet</a>
+              </footer>
+            </blockquote><br>
+          </div>
+          <div class="box">
+            <h2><i class="fa fa-tasks ico"></i> Currently playing with</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                ArchLinux
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                LXC
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Computer Graphics
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                Rust <small>(<a target="_blank" href="https://github.com/ebobby/simple-raytracer">a raytracer in Rust</a>)
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </body>
+</html>

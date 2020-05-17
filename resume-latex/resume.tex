@@ -1,0 +1,136 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+    % The font could be set to Windows-specific Calibri by using the 'calibri' option
+    \documentclass[]{mcdowellcv}
+
+    % For mathematical symbols
+    \usepackage{amsmath}
+
+    
+      % Set applicant's personal data for header
+      \name{Francisco Soto}
+      \address{Hermosilo, Sonora, Mex. \linebreak +52 (662) 2573681}
+      \contacts{ebobby@ebobby.org \linebreak https://ebobby.org}
+    
+
+    \begin{document}
+% Print the header
+\makeheader
+      
+
+\begin{cvsection}{Experience}
+	\begin{cvsubsection}{Senior Software Engineer}{Homeroom}{Mar 2019 -- Present}
+		San Francisco, CA (remote)
+		\begin{itemize}%
+			\item Optimized backend performance by 300\% during peak time by redesigning our locking strategy and fine tuning our production environment resulting in higher sales with less infrastructure expenditure.
+			\item Developed a CLI tool to create and deploy isolated testing environments which resulted in reduced total bug count and increased feature development and validation speed.
+			\item Implemented a developer environment for increased developer productivity by leveraging vagrant, containers and virtual machines.
+			\item Technologies utilized: Ruby On Rails, TypeScript, PostgreSQL, React, Redux.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Senior Software Engineer}{CareZone}{Jul 2015 -- Dec 2018}
+		Seattle, WA (Remote)
+		\begin{itemize}%
+			\item Designed and implemented a data synchronization scheme between the application, physical pharmacy and warehouse to power an online pharmacy store.
+			\item Improved application performance by implementing more efficient algorithms and optimizing our database queries resulting in better user experience.
+			\item Technologies utilized: Ruby On Rails, Javascript, Go, PostgreSQL, React, Redux.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Founder}{Hello Code}{Apr 2014 -- May 2015}
+		Hermosillo, SON, MX
+		\begin{itemize}%
+			\item Co-founded the company, made first hires, managed the team, secured angel investment and landed strategic partnerships.
+			\item Designed and implemented Chopeo, a multi-tenant e-commerce service which grew to serve 250 small micro-business stores.
+			\item Technologies utilized: Ruby On Rails, Javascript, Common Lisp, PostgreSQL.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Spacecraft Software Engineer}{Spire Global, Inc}{Aug 2013 -- Nov 2013}
+		San Francisco, CA
+		\begin{itemize}%
+			\item Implemented the radio module firmware for ground-to-satellite communications for Ardusat2 on a record-breaking four month design-to-implemention satellite project.
+			\item Implemented an embedded linux deamon for process control and monitoring for Lemur-1
+			\item Technologies utilized: C, Python, FreeRTOS, Arduino, ARM.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Senior Software Engineer}{Expensify}{Feb 2013 -- Jun 2013}
+		San Francisco, CA
+		\begin{itemize}%
+			\item Spearheaded the training of marketing and sales on the use of SQL by themselves resulting in improved targeted ads campaigns.
+			\item Implemented new features and new bank integrations which increased the range of customers served.
+			\item Optimized database queries by carefully profiling the application ensuring we conform to strict SLAs.
+			\item Technologies utilized: PHP, Javascript, C++, MySQL.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Engineering Manager}{INgrooves}{Apr 2009 -- Dec 2012}
+		San Francisco, CA
+		\begin{itemize}%
+			\item Managed and empowered technical teams on major company-wide projects.
+			\item Bootstrapped the first version of an ebook distribution platform, INscribe Digital, bringing in a new revenue stream.
+			\item Architected an album ingestion enterprise-grade system driving the distribution pipeline of thousands of the most sought after musical property in the world.
+			\item Technologies utilized: C\#, C++, .NET 3.5, SQL Server, IIS.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Senior Software Engineer}{Nearsoft}{Aug 2008 -- Sep 2009}
+		Hermosillo, SON, MX
+		\begin{itemize}%
+			\item Developed a online real-time chat application by leveraging HTML, Javascript and XMPP powering the a haggling platform startup.
+			\item Technologies utilized: PHP, C\#, Javascript, MySQL.
+		\end{itemize}
+	\end{cvsubsection}
+	\begin{cvsubsection}{Senior Software Engineer}{Centro de Investigación y Desarrollo de Ingeniería Avanzada}{Feb 2006 -- Aug 2008}
+		Hermosillo, SON, MX
+		\begin{itemize}%
+			\item Implemented an image processing and analyzing application accelerating progress on a optical profilometry research.
+			\item Lead a small team that developed a meat grade classifier that brought forward the state of the art in computer vision and improved mexican slaughterhouses processes.
+			\item Implemented a prototype spectrophotometer for coffee bean roast measurement in an effort from local coffe roasting industry to innovate.
+			\item Technologies utilized: C\#, C++, .NET, Java, OpenGL, Matlab.
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
+\begin{cvsection}{Personal Open Source Projects}
+	\begin{cvsubsection}{}{}{}
+		\begin{itemize}
+			\setlength\itemsep{3pt}
+			\item \textbf{tracing.js} (https://github.com/ebobby/tracing.js)  Function tracing and debugging Javascript library. Javascript
+			\item \textbf{has-many-with-set} (https://github.com/ebobby/has-many-with-set)  A smarter way of doing many-to-many relationships in Ruby On Rails. Ruby On Rails
+			\item \textbf{simple-pathtracer} (https://github.com/ebobby/simple-pathtracer)  Simple path tracing project in Rust. Rust
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
+\begin{cvsection}{Education}
+	\begin{cvsubsection}{Hermosilo, Sonora}{Universidad de Sonora}{Aug 2001 | Dec 2005}
+		\begin{itemize}
+			\item BS in Computer Science. GPA: 3.3
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
+\begin{cvsection}{Skills}
+	\begin{cvsubsection}{}{}{}
+		\begin{itemize}
+			\item Proficient:  Ruby, Javascript, C, SQL, Linux
+			\item Familiar:  C\#, Rust, Python, Java, Lisp, C++
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
+
+\ 
+\end{document}
