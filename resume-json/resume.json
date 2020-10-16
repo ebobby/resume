@@ -28,6 +28,7 @@
   "work": [
     {
       "highlights": [
+        "Mentored and guided team members, performed code reviews, guided architecture and system design.",
         "Optimized backend performance by 300% during peak time by redesigning our locking strategy and fine tuning our production environment resulting in higher sales with less infrastructure expenditure.",
         "Developed a CLI tool to create and deploy isolated testing environments which resulted in reduced total bug count and increased feature development and validation speed.",
         "Implemented a developer environment for increased developer productivity by leveraging vagrant, containers and virtual machines.",
@@ -43,6 +44,7 @@
     {
       "highlights": [
         "Designed and implemented a data synchronization scheme between the application, physical pharmacy and warehouse to power an online pharmacy store.",
+        "Guided other team members on Ruby, gave internal tech talks about performance optimization, lead small teams.",
         "Improved application performance by implementing more efficient algorithms and optimizing our database queries resulting in better user experience.",
         "Technologies utilized: Ruby On Rails, Javascript, Go, PostgreSQL, React, Redux."
       ],
