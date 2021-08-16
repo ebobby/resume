@@ -19,25 +19,42 @@
 %% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
-    % The font could be set to Windows-specific Calibri by using the 'calibri' option
-    \documentclass[]{mcdowellcv}
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[calibri]{mcdowellcv}
 
-    % For mathematical symbols
-    \usepackage{amsmath}
+% For mathematical symbols
+\usepackage{amsmath}
 
-
-      % Set applicant's personal data for header
-      \name{Francisco Soto}
-      \address{Hermosilo, Sonora, Mex. \linebreak +52 (662) 2573681}
-      \contacts{ebobby@ebobby.org \linebreak https://ebobby.org}
-
-
-    \begin{document}
+% Set applicant's personal data for header
+\name{Francisco Soto}
+\address{Hermosilo, Sonora, Mex.}
+\contacts{ebobby@ebobby.org \linebreak https://ebobby.org}
+\begin{document}
 % Print the header
 \makeheader
 
-
 \begin{cvsection}{Experience}
+	\vskip 0.2in
+	\begin{cvsubsection}{Senior Software Engineer}{dumpling}{Nov 2020 -- Present}
+		Berkeley, CA (remote)
+		\begin{itemize}%
+			\item Developed a web-based system to curate the catalog powering our grocery delivery platform. The system allowed in-place real-time changes to our catalog improving quality and quantity of products and services provided throughout our platform. The product catalog went in a just a few weeks from being just good enough to excellent and comprehensive, one of our strongest assets.
+			\item Developed a time stream database based search result ordering system. It aggregated user and global preferences while searching for products improving personal search results improving user retention and engagement.
+			\item Technologies utilized: Python, AWS Cognito, AWS AppSync, AWS DynamoDB, AWS Time Stream, AWS Serverless Lambda.
+		\end{itemize}
+	\end{cvsubsection}
+	\vskip 0.3in
+	\begin{cvsubsection}{Senior Software Engineer}{Homeroom}{Mar 2019 -- Sep 2020}
+		San Francisco, CA (remote)
+		\begin{itemize}%
+			\item Mentored and guided team members, performed code reviews, guided architecture and system design.
+			\item Optimized backend performance by 300\% during peak time by redesigning our locking strategy and fine tuning our production environment resulting in higher sales with less infrastructure expenditure.
+			\item Developed a CLI tool to create and deploy isolated testing environments which resulted in reduced total bug count and increased feature development and validation speed.
+			\item Implemented a developer environment for increased developer productivity by leveraging vagrant, containers and virtual machines.
+			\item Technologies utilized: Ruby On Rails, TypeScript, PostgreSQL, React, Redux.
+		\end{itemize}
+	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Senior Software Engineer}{Homeroom}{Mar 2019 -- Present}
 		San Francisco, CA (remote)
 		\begin{itemize}%
@@ -48,6 +65,7 @@
 			\item Technologies utilized: Ruby On Rails, TypeScript, PostgreSQL, React, Redux.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Senior Software Engineer}{CareZone}{Jul 2015 -- Dec 2018}
 		Seattle, WA (Remote)
 		\begin{itemize}%
@@ -57,6 +75,7 @@
 			\item Technologies utilized: Ruby On Rails, Javascript, Go, PostgreSQL, React, Redux.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Founder}{Hello Code}{Apr 2014 -- May 2015}
 		Hermosillo, SON, MX
 		\begin{itemize}%
@@ -65,6 +84,7 @@
 			\item Technologies utilized: Ruby On Rails, Javascript, Common Lisp, PostgreSQL.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Spacecraft Software Engineer}{Spire Global, Inc}{Aug 2013 -- Nov 2013}
 		San Francisco, CA
 		\begin{itemize}%
@@ -73,6 +93,7 @@
 			\item Technologies utilized: C, Python, FreeRTOS, Arduino, ARM.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Senior Software Engineer}{Expensify}{Feb 2013 -- Jun 2013}
 		San Francisco, CA
 		\begin{itemize}%
@@ -82,6 +103,7 @@
 			\item Technologies utilized: PHP, Javascript, C++, MySQL.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Engineering Manager}{INgrooves}{Apr 2009 -- Dec 2012}
 		San Francisco, CA
 		\begin{itemize}%
@@ -91,6 +113,7 @@
 			\item Technologies utilized: C\#, C++, .NET 3.5, SQL Server, IIS.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Senior Software Engineer}{Nearsoft}{Aug 2008 -- Sep 2009}
 		Hermosillo, SON, MX
 		\begin{itemize}%
@@ -98,6 +121,7 @@
 			\item Technologies utilized: PHP, C\#, Javascript, MySQL.
 		\end{itemize}
 	\end{cvsubsection}
+	\vskip 0.3in
 	\begin{cvsubsection}{Senior Software Engineer}{Centro de Investigación y Desarrollo de Ingeniería Avanzada}{Feb 2006 -- Aug 2008}
 		Hermosillo, SON, MX
 		\begin{itemize}%
@@ -108,6 +132,7 @@
 		\end{itemize}
 	\end{cvsubsection}
 \end{cvsection}
+\vskip 0.3in
 \begin{cvsection}{Personal Open Source Projects}
 	\begin{cvsubsection}{}{}{}
 		\begin{itemize}
@@ -118,21 +143,23 @@
 		\end{itemize}
 	\end{cvsubsection}
 \end{cvsection}
-\begin{cvsection}{Education}
-	\begin{cvsubsection}{Hermosilo, Sonora}{Universidad de Sonora}{Aug 2001 | Dec 2005}
-		\begin{itemize}
-			\item BS in Computer Science. GPA: 3.3
-		\end{itemize}
-	\end{cvsubsection}
-\end{cvsection}
-\begin{cvsection}{Skills}
-	\begin{cvsubsection}{}{}{}
-		\begin{itemize}
-			\item Proficient:  Ruby, Javascript, C, SQL, Linux
-			\item Familiar:  C\#, Rust, Python, Java, Lisp, C++
-		\end{itemize}
-	\end{cvsubsection}
-\end{cvsection}
-
-\
+% \begin{cvsection}{Education}
+%   \begin{cvsubsection}{Hermosilo, Sonora}{Universidad de Sonora}{Aug 2001 | Dec 2005}
+%     \begin{itemize}
+%     \item BS in Computer Science. GPA: 3.3
+%     \end{itemize}
+%   \end{cvsubsection}
+% \end{cvsection}
+% \begin{cvsection}{Skills}
+%   \begin{cvsubsection}{}{}{}
+%     \begin{itemize}
+%     \item Proficient:  Ruby, Javascript, C, SQL, Linux
+%     \item Familiar:  C\#, Rust, Python, Java, Lisp, C++
+%     \end{itemize}
+%   \end{cvsubsection}
+% \end{cvsection}
 \end{document}
+%%% Local Variables:
+%%% TeX-engine: luatex
+%%% TeX-master: t
+%%% End:
